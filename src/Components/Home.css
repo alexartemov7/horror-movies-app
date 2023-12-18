@@ -1,0 +1,78 @@
+body {
+    background-color: #111; 
+    color: #fff; 
+    font-family: 'Creepster', cursive, sans-serif; 
+    padding: 20px;
+    margin: 0;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/023/696/000/non_2x/spooky-dark-halloween-background-illustration-ai-generative-free-photo.jpg'); /* Add a spooky background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+h1 {
+    color: #ff4444; 
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.movie-card {
+    background-color: rgba(34, 34, 34, 0.9); 
+    border: 1px solid #ff4444; 
+    padding: 20px;
+    width: calc(33.333% - 20px); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); 
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.movie-card:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 6px 12px rgba(255, 0, 0, 0.8); 
+}
+
+.movie-card h2 {
+    color: #ff4444;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.movie-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: opacity 0.3s ease; 
+}
+
+.movie-card img:hover {
+    opacity: 0.8; 
+}
+
+@media (max-width: 768px) {
+    .movie-card {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-card {
+        width: 100%; 
+    }
+}
